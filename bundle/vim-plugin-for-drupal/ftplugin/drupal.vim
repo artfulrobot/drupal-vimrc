@@ -51,7 +51,9 @@ if &ft =~ '\<php\>'
   " attention to case. This option affects searching in files and also tag
   " searches and code completion. If you want a case-insensitive search, start
   " the pattern with '\c'.
-  setl noignorecase
+  " setl noignorecase
+  " artfulrobot: that was just plain annoying. I like ignorecase!
+  setl ignorecase
   " Format comment blocks.  Just type / on a new line to close.
   " Recognize // (but not #) style comments.
   setl comments=sr:/**,m:*\ ,ex:*/,://
